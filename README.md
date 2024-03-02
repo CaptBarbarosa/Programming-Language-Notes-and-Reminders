@@ -1,0 +1,1 @@
+This repo will be a reminder for myself on python. In case I forgot some stuff. 
