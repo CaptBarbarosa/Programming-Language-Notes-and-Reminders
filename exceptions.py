@@ -8,6 +8,5 @@ def func1(var):
         print(e)
 
 
-if __name__ == '_main_':
-    val = input("Enter something: ")
-    a = func1(val)
+val = input("Enter something: ")
+a = func1(val)
