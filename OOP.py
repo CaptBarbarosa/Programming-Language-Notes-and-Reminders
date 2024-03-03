@@ -1,4 +1,5 @@
 from Time import Time
+
 """
 class <class_header>: class header defines a class.
     def __init__ (self, <optional variables>): This is a constructor. It initializes.
@@ -13,8 +14,15 @@ Some of the special attributes of a Class
 __doc__ = Gives you a class's doc string. If it is empty it returns "None"
 __module__ = Gives you the name of the file in which the class is defined.
 __name__ = Gives you the class name 
+"""
+
+# To make an attribute private we make it start with two underscore.
 
 """
+A static method can be called even if an object of that class is not created.
+Static methods don't receive references to object
+"""
+
 
 time1 = Time()
 time2 = Time(1)  # Here you can initialize the hour only
