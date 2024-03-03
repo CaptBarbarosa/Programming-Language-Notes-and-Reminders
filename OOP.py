@@ -23,6 +23,24 @@ A static method can be called even if an object of that class is not created.
 Static methods don't receive references to object
 """
 
+"""
+You can also overload operators
+To operate 
++ __add__
+- __sub__
+* __mul__
+/ __div__
+// __floordiv__
+% __mod__
+** __pow__
+<< __lshift__
+>> __rshift__
+& __and__
+^ __xor__
+| __or__
++= __iad__
+-= __isub__
+"""
 
 time1 = Time()
 time2 = Time(1)  # Here you can initialize the hour only
