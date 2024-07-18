@@ -17,3 +17,27 @@ print(list('Hello'))
 
 print('theta' in ['alpha','beta','theta','omega'])
 print('zeta' in ['alpha','beta','theta','omega'])
+
+cat = ["fat", "orange", "loud"]
+size, color, disposition = cat
+print("Size:",size," Color: ",color," Disposition: ",disposition)
+size, color, disposition = 'skinny', "black", "quiet"
+print("Size:",size," Color: ",color," Disposition: ",disposition)
+
+
+a= 'A'
+b= 'B'
+print("Before: ",a,b)
+a,b = b,a
+print("After: ",a,b)
+
+
+#   LIST METHODS
+
+
+
+
+
+
+
+
