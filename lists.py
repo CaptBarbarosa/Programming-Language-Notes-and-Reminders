@@ -34,7 +34,7 @@ print("After: ",a,b)
 
                 ###   LIST METHODS    ###
 
-print("\n\n--->Now doing list methods append")
+print("\n\n---->Now doing list methods append")
 numbers = []
 numbers.append(1)
 print(numbers)
@@ -56,7 +56,7 @@ print(list1)
 
 
 
-print("\n\n--->Now doing list methods extend")
+print("\n\n---->Now doing list methods extend")
 numbers = [1, 2, 3]
 numbers.extend([4, 5, 6])
 #numbers.extend(7)
@@ -87,12 +87,17 @@ print(combined_list)
 
 
 
-print("\n\n--->Now doing list methods insert")
+print("\n\n---->Now doing list methods insert")
 # Difference between insert and append is that in insert you can specify the place to insert
+print("--->Inserting at 0")
 numbers = [1, 2, 3]
+numbers.insert(0, 0)
+print(numbers)
 
-
-
+print("--->Inserting at 1")
+fruits = ['apple', 'banana', 'cherry']
+fruits.insert(1, 'blueberry')
+print(fruits)
 
 
 
