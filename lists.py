@@ -134,6 +134,7 @@ print(colors)
 
 
 
+print("\n\n---->Now doing list methods pop")
 
 
 
