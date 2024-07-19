@@ -94,10 +94,111 @@ numbers = [1, 2, 3]
 numbers.insert(0, 0)
 print(numbers)
 
-print("--->Inserting at 1")
+print("---> Inserting at 1")
 fruits = ['apple', 'banana', 'cherry']
 fruits.insert(1, 'blueberry')
 print(fruits)
+
+print("---> Inserting based on condition")
+numbers = [10, 20, 40, 50]
+for i, num in enumerate(numbers):
+    if num > 30:
+        numbers.insert(i,30)
+        break
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
