@@ -1,3 +1,8 @@
+""" 
+Please know that I'm also very well aware that it is stupid to memorize these stuff, 
+yet I believe knowing they exists will come handy.
+"""
+
 spam = ['cat', 'bat', 'rat', 'elephant']
 print("spam[0] is: ",spam[0])
 print("spam[-1] is: ",spam[-1])
@@ -156,8 +161,11 @@ print("Removed is: ",removed, " Remaining is: ",matrix)
 
 
 
-
-
+print("\n\n---->Now doing list methods clear")
+# With clear you can emtpy the entire lists.
+fruits = ['apple', 'banana', 'cherry', 'date']
+fruits.clear()
+print(fruits)
 
 
 
