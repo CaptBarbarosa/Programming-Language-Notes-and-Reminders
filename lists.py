@@ -222,10 +222,21 @@ print(people)
 
 
 
+print("\n\n---->Now doing list methods: copy")
+import copy
+original = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+shallow_copy = copy.copy(original)
+original[0][0] = 99
+print("!!---> In shallow copy the changes you make in one shows in other")
+print("Original: ", original)
+print("Shallow Copy: ", shallow_copy)
 
-
-
-
+original = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+deep_copy = copy.deepcopy(original)
+original[0][0] = 99
+print("!!---> In deep copy the changes you make in one doesn't shows in other")
+print("Original: ", original)
+print("Shallow Copy: ", deep_copy)
 
 
 
