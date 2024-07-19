@@ -92,7 +92,7 @@ print(combined_list)
 
 
 
-print("\n\n---->Now doing list methods insert")
+print("\n\n---->Now doing list methods: insert")
 # Difference between insert and append is that in insert you can specify the place to insert
 print("--->Inserting at 0")
 numbers = [1, 2, 3]
@@ -119,7 +119,7 @@ print(main_list)
 
 
 
-print("\n\n---->Now doing list methods remove")
+print("\n\n---->Now doing list methods: remove")
 print("--->You can remove a given string within a list")
 fruits = ['apple', 'banana', 'cherry', 'date']
 fruits.remove('banana')
@@ -139,7 +139,7 @@ print(colors)
 
 
 
-print("\n\n---->Now doing list methods pop")
+print("\n\n---->Now doing list methods: pop")
 #Unlike remove, when you do a pop it also returns a member of the list.
 print("---> Now we are popping the last element")
 fruits = ['apple', 'banana', 'cherry', 'date']
@@ -161,7 +161,7 @@ print("Removed is: ",removed, " Remaining is: ",matrix)
 
 
 
-print("\n\n---->Now doing list methods clear")
+print("\n\n---->Now doing list methods: clear")
 # With clear you can emtpy the entire lists.
 fruits = ['apple', 'banana', 'cherry', 'date']
 fruits.clear()
@@ -171,11 +171,18 @@ print(fruits)
 
 
 
+print("\n\n---->Now doing list methods: index")
+print("---> You can find index of a given member from the list")
+# If it exists more than one time it shows the first occurence.
+fruits = ['apple', 'banana', 'cherry', 'date', 'cherry']
+index_cherry = fruits.index('cherry')
+print(index_cherry)
 
-
-
-
-
+print("---> You can specify which indexes to look between")
+letters = ['a', 'b', 'c', 'b', 'd', 'b']
+index_b = letters.index('b', 2) # Looks after index 2
+index_b_range = letters.index('c', 2, 5) #Looks within 2 and 5
+print("First: ",index_b, " Second: ",index_b_range)
 
 
 
