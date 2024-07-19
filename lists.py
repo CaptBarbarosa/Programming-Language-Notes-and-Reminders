@@ -106,18 +106,30 @@ for i, num in enumerate(numbers):
         numbers.insert(i,30)
         break
 
+print("---> Inserting a list")
+main_list = [1, 2, 3]
+main_list.insert(1, [4, 5, 6])
+print(main_list)
 
 
 
 
+print("\n\n---->Now doing list methods remove")
+print("--->You can remove a given string within a list")
+fruits = ['apple', 'banana', 'cherry', 'date']
+fruits.remove('banana')
+print(fruits)
 
+print("---> You can remove a number")
+numbers = [1, 2, 3, 2, 4, 2]
+numbers.remove(2)
+print(numbers)
 
-
-
-
-
-
-
+print("---> If you want to drop every element within a list:")
+colors = ['red', 'green', 'blue', 'green', 'yellow']
+while 'green' in colors:
+    colors.remove('green')
+print(colors)
 
 
 
