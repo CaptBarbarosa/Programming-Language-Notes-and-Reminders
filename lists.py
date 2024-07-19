@@ -135,15 +135,22 @@ print(colors)
 
 
 print("\n\n---->Now doing list methods pop")
+#Unlike remove, when you do a pop it also returns a member of the list.
+print("---> Now we are popping the last element")
+fruits = ['apple', 'banana', 'cherry', 'date']
+last_fruit = fruits.pop()
+print(last_fruit)
+print(fruits)
 
+print("---> You can also specify the position where to pop")
+numbers = [10, 20, 30, 40, 50]
+removed = numbers.pop(2)
+print("removed is: ",removed, " remaining is: ",numbers)
 
-
-
-
-
-
-
-
+print("---> If you do pop with a matrix it removes the list as it was one member")
+matrix = [[1, 2], [3, 4], [5, 6]]
+removed = matrix.pop()
+print("Removed is: ",removed, " Remaining is: ",matrix)
 
 
 
