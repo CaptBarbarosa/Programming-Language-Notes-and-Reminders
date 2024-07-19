@@ -197,14 +197,26 @@ print("Number of twos are: ",twos)
 
 
 
+print("\n\n---->Now doing list methods: sort")
+print("---> You can sort normally, or reverse")
+numbers = [5, 2, 9, 1, 5, 6]
+numbers.sort()
+print(numbers)
+numbers.sort(reverse=True)
+print("----> Reversely sorted version is\n" ,numbers)
 
+print("---> In strings it sorts alphabetically")
+fruits = ['banana', 'apple', 'cherry', 'date']
+fruits.sort()
+print(fruits)
 
-
-
-
-
-
-
+print("---> In tuples or dictionaries within list you have to specify yourself")
+students = [('Alice', 25), ('Bob', 20), ('Charlie', 23)]
+students.sort(key=lambda x: x[1], reverse = True)
+print(students)
+people = [{'name': 'Alice', 'age': 25}, {'name': 'Bob', 'age': 20}, {'name': 'Charlie', 'age': 23}]
+people.sort(key=lambda x: x['age'])
+print(people) 
 
 
 
