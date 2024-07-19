@@ -242,7 +242,13 @@ print("Shallow Copy: ", deep_copy)
 
 
 
-
+print("\n\n---->Now doing list methods: enumerate")
+# With enumerate we can loop over a list and have an automatic counter. 
+# Enumerate returns an enumerate object, which can then be converted into a list of tuples.
+"""
+enumerate(iterable, start=0)
+iterable = Any iterable object such as a list, tuple, dictionary or string.
+"""
 
 
 
