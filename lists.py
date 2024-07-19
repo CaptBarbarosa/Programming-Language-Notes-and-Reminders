@@ -53,6 +53,9 @@ list1.append(list2)
 print(list1)
 
 
+
+
+
 print("\n\n--->Now doing list methods extend")
 numbers = [1, 2, 3]
 numbers.extend([4, 5, 6])
@@ -84,7 +87,9 @@ print(combined_list)
 
 
 
-
+print("\n\n--->Now doing list methods insert")
+# Difference between insert and append is that in insert you can specify the place to insert
+numbers = [1, 2, 3]
 
 
 
