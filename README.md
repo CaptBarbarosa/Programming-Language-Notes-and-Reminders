@@ -1,1 +1,1 @@
-This repo will be a reminder for myself on python. In case I forgot some stuff. 
+This repo will be a reminder for myself on python. In case I forgot some stuff. These things are from my first year python studies and they teach some very general, basic stuff like dictionaries etc

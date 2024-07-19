@@ -32,7 +32,30 @@ a,b = b,a
 print("After: ",a,b)
 
 
-#   LIST METHODS
+                ###   LIST METHODS    ###
+
+print("\n\n--->Now doing list methods")
+numbers = []
+numbers.append(1)
+print(numbers)
+
+print("---> You can have different data types in list")
+mixed_list = [1, 'a', 3.14]
+mixed_list.append(True)
+mixed_list.append([5, 6, 7])
+print(mixed_list)
+
+
+print("--> You can append a list into another")
+list1 = [1,2,3]
+list2 = [4,5,6]
+list1.append(list2)
+print(list1)
+
+
+
+
+
 
 
 
