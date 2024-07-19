@@ -190,7 +190,7 @@ print("First: ",index_b, " Second: ",index_b_range)
 
 print("\n\n---->Now doing list methods: count")
 print("---> With count you can count how many occurance an element has within a list")
-numbers = [1, 2, 3, 2, 4, 2, 5]
+numbers = [1, 2, 'Apple', True, 3, 2, 4, 2, 5]
 twos = numbers.count(2)
 print("Number of twos are: ",twos)
 
