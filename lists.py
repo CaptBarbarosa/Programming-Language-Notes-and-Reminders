@@ -34,7 +34,7 @@ print("After: ",a,b)
 
                 ###   LIST METHODS    ###
 
-print("\n\n--->Now doing list methods")
+print("\n\n--->Now doing list methods append")
 numbers = []
 numbers.append(1)
 print(numbers)
@@ -53,6 +53,33 @@ list1.append(list2)
 print(list1)
 
 
+print("\n\n--->Now doing list methods extend")
+numbers = [1, 2, 3]
+numbers.extend([4, 5, 6])
+#numbers.extend(7)
+print(numbers)
+
+print("---> Extending a list with a tuple")
+fruits = ['apple', 'banana']
+fruits.extend(('cherry', 'date'))
+print(fruits)
+
+print("---> Extending a list with a string")
+letters = ['a', 'b', 'c']
+letters.extend('def')
+print(letters)
+
+print("---> Extending a list with a dictionary")
+keys = [1, 2, 3]
+keys.extend({4: 'four','five':5})
+print(keys)
+
+print("---> Extending a list within a loop")
+combined_list = []
+lists_to_add = [[1, 2], [3, 4], [5, 6]]
+for lst in lists_to_add:
+    combined_list.extend(lst)
+print(combined_list)
 
 
 
