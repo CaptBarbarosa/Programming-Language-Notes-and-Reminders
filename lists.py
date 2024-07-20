@@ -299,11 +299,29 @@ print(result)
 
 
 
+print("\n\n---->Now doing list methods: filter")
+print("---> It is like if but better")
+words = ['apple', 'banana', 'cherry', 'date', 'elderberry', 'fig', 'grape']
+long_words = filter(lambda x: len(x) > 5, words)
+result = list(long_words)
+print(result)
 
+print("---> You can do it with tuples")
+numbers = (10, 15, 20, 25, 30, 35, 40)
+greater_than_25 = filter(lambda x: x > 25, numbers)
+result = list(greater_than_25)
+print(result)
 
-
-
-
+print("---> Or you can do it with dictionaries")
+people = [
+    {'name': 'Alice', 'age': 25},
+    {'name': 'Bob', 'age': 30},
+    {'name': 'Charlie', 'age': 35},
+    {'name': 'David', 'age': 28}
+]
+adults = filter(lambda person: person['age'] > 28, people)
+result = list(adults)
+print(result)
 
 
 
