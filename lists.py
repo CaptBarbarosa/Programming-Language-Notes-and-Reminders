@@ -250,6 +250,9 @@ enumerate(iterable, start=0)
 iterable = Any iterable object such as a list, tuple, dictionary or string.
 """
 
+fruits = ['apple', 'banana', 'cherry']
+for index, fruit in enumerate(fruits):
+    print(f"Index: {index}, Fruit: {fruit}")
 
 
 
