@@ -254,6 +254,51 @@ fruits = ['apple', 'banana', 'cherry']
 for index, fruit in enumerate(fruits):
     print(f"Index: {index}, Fruit: {fruit}")
 
+print("---> You can specify the index")
+fruits = ('apple', 'banana', 'cherry')
+for index, fruit in enumerate(fruits, start=1): 
+    print(f"Index: {index}, Fruit: {fruit}")
+
+print("---> You can create a list with enumerate")
+squares_with_indices = [(index, num**2) for index, num in enumerate(range(1, 6))]
+print(squares_with_indices)
+
+print("---> You can create a dictionary with enumerate")
+items = ['apple', 'banana', 'cherry']
+indexed_dict = {index: item for index, item in enumerate(items)}
+print(indexed_dict)
+
+
+
+
+
+print("\n\n---->Now doing list methods: map")
+print("---> Mapping a list")
+numbers = [1, 2, 3, 4, 5]
+mapped = map(str, numbers)
+result = list(mapped)
+print(result)
+
+print("---> Mapping with a lambda function")
+squared = map(lambda x: x**2, numbers)
+result = list(squared)
+print(result)
+
+print("---> Operations within a map")
+numbers2 = [4, 5, 6]
+summed = map(lambda x, y: x + y, numbers, numbers2)
+result = list(summed)
+print(result)
+
+points = [(1, 2), (3, 4), (5, 6)]
+first_elements = map(lambda point: point[0], points)
+result = list(first_elements)
+print(result)
+
+
+
+
+
 
 
 
