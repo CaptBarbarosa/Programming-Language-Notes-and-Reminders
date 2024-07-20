@@ -34,7 +34,7 @@ print("Size:",size," Color: ",color," Disposition: ",disposition)
 
                 ###   STRINGS    ###
 
-
+ 
 
 
 
@@ -284,6 +284,7 @@ print(indexed_dict)
 
 
 print("\n\n---->Now doing list methods: map")
+# Please notice the similarities with this and loops
 print("---> Mapping a list")
 numbers = [1, 2, 3, 4, 5]
 mapped = map(str, numbers)
@@ -311,6 +312,7 @@ print(result)
 
 
 print("\n\n---->Now doing list methods: filter")
+# Please notice the similarities with this and loops
 print("---> It is like if but better")
 words = ['apple', 'banana', 'cherry', 'date', 'elderberry', 'fig', 'grape']
 long_words = filter(lambda x: len(x) > 5, words)
@@ -333,6 +335,26 @@ people = [
 adults = filter(lambda person: person['age'] > 28, people)
 result = list(adults)
 print(result)
+
+
+nums = [4,2,6,13,30,42]
+my_list = filter (lambda n: n%2 == 0, nums)
+print(list(my_list))
+
+average = sum(nums)/len(nums)
+higher_than_average = list(map(lambda n: n*n, filter (lambda num: num > average, nums)))
+print(higher_than_average)
+
+
+
+
+
+my_list = [(letter, num) for letter in 'abcd' for num in range(4)]
+print(my_list)
+
+
+
+
 
 
 
