@@ -32,11 +32,6 @@ print("Size:",size," Color: ",color," Disposition: ",disposition)
 size, color, disposition = 'skinny', "black", "quiet"
 print("Size:",size," Color: ",color," Disposition: ",disposition)
 
-### Fstrings #
-var: str = 'var'
-print(f'{var:>10}') # There will be a leftward expansion for 10 characters.
-
-
                 ###   METHODS    ###
 
 print("\n\n---->Now doing list method: append")
@@ -349,6 +344,30 @@ print(higher_than_average)
 
 my_list = [(letter, num) for letter in 'abcd' for num in range(4)]
 print(my_list)
+
+
+
+                ## String Methods
+print("\n\n---->Now doing string methods: slice")
+my_string = "Hello Mate"
+my_string = my_string[2:5]
+print(my_string)
+
+print("\n\n---->Now doing string methods: strip")
+print("With string stripping you can dismiss characters at the beginning and at the end")
+my_string = "   Hello Mate  "
+print(my_string.strip())
+my_string = "#Hello Mate###"
+print(my_string.strip("#"))
+
+var: str = 'var'
+print(f'{var:>10}') # There will be a leftward expansion for 10 characters.
+
+
+
+
+
+
 
 
 
