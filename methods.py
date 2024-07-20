@@ -32,11 +32,9 @@ print("Size:",size," Color: ",color," Disposition: ",disposition)
 size, color, disposition = 'skinny', "black", "quiet"
 print("Size:",size," Color: ",color," Disposition: ",disposition)
 
-                ###   STRINGS    ###
-
- 
-
-
+### Fstrings #
+var: str = 'var'
+print(f'{var:>10}') # There will be a leftward expansion for 10 characters.
 
 
                 ###   METHODS    ###
