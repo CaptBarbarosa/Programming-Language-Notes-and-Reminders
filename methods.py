@@ -3,6 +3,9 @@ Please know that I'm also very well aware that it is stupid to memorize these st
 yet I believe knowing they exists will come handy.
 """
 
+                ###   LIST    ###
+
+
 spam = ['cat', 'bat', 'rat', 'elephant']
 print("spam[0] is: ",spam[0])
 print("spam[-1] is: ",spam[-1])
@@ -29,17 +32,16 @@ print("Size:",size," Color: ",color," Disposition: ",disposition)
 size, color, disposition = 'skinny', "black", "quiet"
 print("Size:",size," Color: ",color," Disposition: ",disposition)
 
-
-a= 'A'
-b= 'B'
-print("Before: ",a,b)
-a,b = b,a
-print("After: ",a,b)
+                ###   STRINGS    ###
 
 
-                ###   LIST METHODS    ###
 
-print("\n\n---->Now doing list methods append")
+
+
+
+                ###   METHODS    ###
+
+print("\n\n---->Now doing list method: append")
 numbers = []
 numbers.append(1)
 print(numbers)
@@ -61,7 +63,7 @@ print(list1)
 
 
 
-print("\n\n---->Now doing list methods extend")
+print("\n\n---->Now doing method: extend")
 numbers = [1, 2, 3]
 numbers.extend([4, 5, 6])
 #numbers.extend(7)
@@ -76,6 +78,15 @@ print("---> Extending a list with a string")
 letters = ['a', 'b', 'c']
 letters.extend('def')
 print(letters)
+
+print("---> Extending a dictionary")
+data = {
+    "numbers": [1, 2, 3],
+    "letters": ["a", "b"]
+}
+data["numbers"].extend([4, 5, 6])
+data["letters"].extend(["c", "d"])
+print(data)
 
 print("---> Extending a list with a dictionary")
 keys = [1, 2, 3]
