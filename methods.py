@@ -354,7 +354,7 @@ my_string = my_string[2:5]
 print(my_string)
 
 print("\n\n---->Now doing string methods: strip")
-print("With string stripping you can dismiss characters at the beginning and at the end")
+print("With string stripping you can dismiss characters from a string")
 my_string = "   Hello Mate  "
 print(my_string.strip())
 my_string = "#Hello Mate###"
@@ -362,6 +362,120 @@ print(my_string.strip("#"))
 
 var: str = 'var'
 print(f'{var:>10}') # There will be a leftward expansion for 10 characters.
+
+print("You can remove given characters from the strings as well.")
+my_string = "www.examplec.com".strip('cmow.')
+print(my_string) # Please notice that it also removed c from examplec
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
