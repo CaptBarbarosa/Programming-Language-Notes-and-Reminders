@@ -226,7 +226,8 @@ print(people)
 
 
 
-print("\n\n---->Now doing list methods: copy")
+print("\n\n---->Now doing the method: copy")
+#Please note that copy works with dictionaries and tuples too.
 import copy
 original = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 shallow_copy = copy.copy(original)
@@ -382,28 +383,37 @@ print(my_string)
 
 
 
+print("\n\n---->Now doing string methods: replace")
+my_string = "Lets do an exercise on replace".replace(' ','_')
+print(my_string)
 
 
 
+                   ###   Some methods used in dictionaries   ###
 
+print("\n\n---->Now doing dictionary methods: fromkeys")
+# fromkeys method is used to create a new dictionariy with the keys from a given sequence.
+# Usage: dict.fromkeys(sequence, value)
 
+keys = ['a', 'b', 'c']
+my_dict = dict.fromkeys(keys)
+print(my_dict)
+print("---> Or you can specify the value.")
+given_value = 3
+my_dict = dict.fromkeys(keys,given_value)
+print(my_dict)
 
+print("---> If you have a string, the fromkeys method create  a dictionary item from each of them")
+keys = 'abc'
+given_value = 3
+my_dict = dict.fromkeys(keys, given_value)
+print(my_dict)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+print("---> If you used tuples as keys, they are immuted.")
+keys = [('a', 1), ('b', 2), ('c', 3)]
+given_value = 'Value'
+my_dict = dict.fromkeys(keys, given_value)
+print(my_dict)
 
 
 
