@@ -371,11 +371,12 @@ print(my_string) # Please notice that it also removed c from examplec
 
 
 
+print("\n\n---->Now doing string methods: removesuffix, removeprefix")
+my_string = "Arthur: Hello there Arthur: ".removeprefix('Arthur: ')
+print(my_string)
 
-
-
-
-
+my_string = "HelloPython".removesuffix("Python")
+print(my_string)
 
 
 
