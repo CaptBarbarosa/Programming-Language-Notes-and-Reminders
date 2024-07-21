@@ -419,10 +419,18 @@ print(my_dict)
 
 
 
+print("\n\n---->Now doing dictionary methods: get")
+# With "get" method you retrieve the values associated with a given key.
+# Usage: dict.get(key, default_value)
+my_dict = {'a' : 1, "b" : 2, 'c' : 3}
+value = my_dict.get('b')
+print(value)
 
-
-
-
+print("---> If the key doesn't exists you can either get default NONE or the value you specified.")
+value = my_dict.get('d')
+print(value)
+value = my_dict.get('d',4)
+print(value)
 
 
 
