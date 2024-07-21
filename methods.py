@@ -436,11 +436,22 @@ print(value)
 
 
 
+print("\n\n---->Now doing dictionary methods: items")
+""" 
+Items returns a view object that displays a list of a dictionary's key tuple pairs.
+It allows to iterate over the keys and values in the dictionary.
+"""
+# Usage: dict.items
+my_dict = {'a' : 1, 'b' : 2, 'c' : 3}
+items = my_dict.items()
+print(items)
 
+print("---> Turning it into list can help")
+items = list(items)
+print(items)
 
-
-
-
+for key, value in my_dict.items():
+    print(f"Key: {key}, Value: {value}")
 
 
 
