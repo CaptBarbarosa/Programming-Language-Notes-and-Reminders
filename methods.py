@@ -459,7 +459,7 @@ for key, value in my_dict.items():
 
 
 print("\n\n---->Now doing dictionary methods: keys")
-# It is like a reverse version of items. It returns keys
+# It is like a version of items that only shows keys. It returns keys
 my_dict = {'a' : 1, 'b' : 2, 'c' : 3}
 keys = my_dict.keys()
 print(keys)
@@ -468,11 +468,17 @@ print(keys)
 
 
 
+print("\n\n---->Now doing dictionary methods: values")
+# It is like a version of items that only shows values. It returns keys
+my_dict = {'a' : 1, 'b' : 2, 'c' : 3}
+values = my_dict.values()
+print(values)
 
 
 
 
 
+print("\n\n---->Now doing dictionary methods: pop")
 
 
 
