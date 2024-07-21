@@ -450,6 +450,7 @@ print("---> Turning it into list can help")
 items = list(items)
 print(items)
 
+print("---> Or you can iterate in the loop")
 for key, value in my_dict.items():
     print(f"Key: {key}, Value: {value}")
 
@@ -457,7 +458,11 @@ for key, value in my_dict.items():
 
 
 
-
+print("\n\n---->Now doing dictionary methods: keys")
+# It is like a reverse version of items. It returns keys
+my_dict = {'a' : 1, 'b' : 2, 'c' : 3}
+keys = my_dict.keys()
+print(keys)
 
 
 
