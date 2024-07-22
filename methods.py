@@ -545,6 +545,64 @@ print(my_dict)
 
 
 
+print("\n\n---->Now doing dictionary methods: dict")
+# With dict you can create a new dictionary. 
+print("By putting nothing inside the dict() you can create an empty dictionary")
+my_dict = dict()
+print(my_dict)
+
+print("---> You can just put keyword arguments")
+my_dict = dict (a=1, b=2, c=3)
+print(my_dict)
+
+print("---> You can use list of tuples or list of lists")
+list_of_tuples = [('a',1), ('b',2), ('c',3)]
+my_dict = dict(list_of_tuples)
+print(my_dict)
+list_of_lists = [['a',1], ['b',2], ['c',3]]
+my_dict = dict(list_of_lists)
+print(my_dict)
+
+print("---> You can create a new dictionary from existing ones")
+original_dict = {'a': 1, 'b': 2}
+my_dict = dict(original_dict, c=3, d=4) # c=3, d=4 part is optional
+print(my_dict)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
