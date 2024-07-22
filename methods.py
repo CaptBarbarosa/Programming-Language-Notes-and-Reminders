@@ -503,9 +503,17 @@ print(my_dict)
 
 
 
-
-
-
+"""
+# Or you can use setdefault
+print(my_dict)
+key = str(input("Enter key: "))
+value = input("Enter value: ")
+if key not in my_dict:
+    my_dict[key] = value
+else:
+    print(my_dict[key])
+print(my_dict)
+"""
 
 
 
