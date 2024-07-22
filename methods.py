@@ -585,10 +585,16 @@ print(inverted_dict)
 
 
 
+print("\n\n---->Now doing dictionary methods: get")
+# Usage: dict.get(key, default_value)
+# With get you can get the value of the key in the dictionary
+my_dict = {'a': 1, 'b': 2, 'c': 3}
+value = my_dict.get('b')
+print(value)
 
-
-
-
+my_dict = {'a': 1, 'b': 2, 'c': 3}
+value = my_dict.get('d', -1) # If key doesn't exists, it returns -1
+print(value)
 
 
 
