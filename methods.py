@@ -572,8 +572,14 @@ print(my_dict)
 
 
 
+print("\n\n---->Now doing dictionary comprehensions")
+# Usage: {key_expression: value_expression for item in iterable if condtion}
+squares = {x: x * x for x in range(6)}
+print(squares)
 
-
+original_dict = {'a': 1, 'b': 2, 'c': 3}
+inverted_dict = {value: key for key, value in original_dict.items()}
+print(inverted_dict)
 
 
 
