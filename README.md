@@ -1,1 +1,1 @@
-This repo will be a reminder for myself on python. In case I forgot some stuff. These things are from my first year python studies and they teach some very general, basic stuff like dictionaries etc
+This repository serves as a personal reminder for my Python studies. It contains notes and examples from my first year of learning Python, covering fundamental topics such as list, dictionaries, OOP, some methods and other basic concepts.
