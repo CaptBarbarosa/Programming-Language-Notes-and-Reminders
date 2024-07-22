@@ -495,6 +495,14 @@ print(my_dict)
 
 
 
+print("\n\n---->Now doing dictionary methods: popitem")
+# It pops the last element
+key, value = my_dict.popitem()
+print(f"Removed item: ({key}, {value})")
+print(my_dict)
+
+
+
 
 
 
