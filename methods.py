@@ -519,14 +519,24 @@ print(my_dict)
 
 
 
+# With len(dictionary) you can get the length
+my_dict = {'a' : 1, 'b' : 2, 'c' : 3}
+print(len(my_dict))
 
 
 
 
 
+# With in you can check if the key exists within the dictionary
+# Usage: key in dictionary
+my_dict = {'a': 1, 'b': 2, 'c': 3}
+key_exists = 'b' in my_dict
+print(key_exists)
 
 
 
+
+# 
 
 
 
