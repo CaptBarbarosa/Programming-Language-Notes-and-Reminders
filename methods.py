@@ -479,15 +479,17 @@ print(values)
 
 
 print("\n\n---->Now doing dictionary methods: pop")
-
-
-
-
-
-
-
-
-
+# It pops a given key. If the key is not present it gives a 'KeyError'
+# Usage: dict.pop(key, deafult) Please note that default is optional and exists so that the program doesn't crash
+my_dict = {'a' : 1, 'b' : 2, 'c' : 3}
+value_popped = my_dict.pop('c')
+print(value_popped)
+print(my_dict)
+my_dict['c'] = 3 # Pushed the popped value back
+#value_popped = my_dict.pop('d') # If this code is run, it will give an error
+value_popped = my_dict.pop('d',-1)
+print(value_popped)
+print(my_dict)
 
 
 
