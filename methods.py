@@ -536,9 +536,10 @@ print(key_exists)
 
 
 
-# 
-
-
+# With del you can delete a given key
+my_dict = {'a': 1, 'b': 2, 'c': 3}
+del my_dict['b']
+print(my_dict)
 
 
 
