@@ -1,11 +1,13 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+typedef int (*specified_operation) (int, int);
+
 int addition(int x, int y)  {return x+y;}
 int multiply(int x, int y)  {return x*y;}
 
-int do_some_operation(int (*specified_operation)(int, int), int x, int y){
-    return specified_operation(x,y);
+int do_some_operation(specified_operation op, int x, int y){
+    return op(x,y);
 }
 
 int main(){
