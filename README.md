@@ -1,6 +1,6 @@
 # General C Learning Repository
 
-Welcome to my General C Learning Repository! 🚀
+Welcome to my General C Repository! 🚀
 
 This repository serves as my personal space for storing and documenting the things I didn't learn in school or the things I needed to remember related to the C programming language. It's not a project but rather a collection of notes, snippets, and experiments as I continue to explore and expand my knowledge in C.
 
