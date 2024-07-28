@@ -1,5 +1,5 @@
 # The *args and **kwargs gives you the opportunity to have infinite arguments
- 
+# Generally, it is used so that the arguments can be sent to other functions.
 
 def named(name, age):
     print(name, age)
