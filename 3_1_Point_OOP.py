@@ -19,7 +19,7 @@ class Employee:
         self.f_name = f_name
         self.l_name = l_name
         Employee.number_of_employees += 1
-    def __str__(self):
+    def __str__(self): # This is known as magic method. If the user tries to print employee this will be printed.
         return "hello"
 
 
@@ -28,4 +28,4 @@ if __name__ == "__main__":
     c.__x = 10  # It doesn't affect the private variable.
     c.print_point()
     emp = Employee("John", "Doe")
-    print(emp)
+    print(emp) 
