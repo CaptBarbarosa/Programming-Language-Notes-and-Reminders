@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 // Main reason why we use enums instead of defines is that enums are easier to debug.
-
+//
 enum Cars{
     TOYOTA,
     FORD,
