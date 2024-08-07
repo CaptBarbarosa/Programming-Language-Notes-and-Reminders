@@ -37,7 +37,7 @@ class Account{
         void set_account_balance(int balance){
             this-> account_balance = balance;}
 
-        float get_balance(void){
+        float get_account_balance(void){
             return this-> account_balance;}
 
         void set_account_name(char *name){
@@ -72,15 +72,45 @@ class Account{
             this-> account_name = new char[strlen(acc.account_name)+1];
             strcpy(this-> account_name, acc.account_name);}
 
-
         ~Account(){
-            delete[] this->account_name;
-        }
-
+            delete[] this->account_name;}
 };
 
+    int Menu(){
+        int selection;
+        cout<<"\n\n------------------------------------\n";
+        cout<<"1. Change the account balance\n2. Get the current balance\n3.Deposit\n4. Withdrawal\n5. Plan your future balance\n6. Mortgage plan\n7.Exit\nEnter your selection: ";
+        cin>> selection;
+        return selection;
+    }
 
 int main(){
+    Account my_account;
+    int selection;
+    float balance, amount;
+    do{
+        selection = Menu();
+        if(selection == 1){
+            cout<<"Enter a new account balance: ";
+            cin>>balance;
+            my_account.set_account_balance(balance);
+            cout<<"New account balance is: "<<my_account.get_account_balance()<<endl;}
+        else if (selection == 2){
+            cout<<"Account balance is"<<my_account.get_account_balance()<<" TL"<<endl;}
+
+        else if(selection == 3){
+            cout<< "Enter an amount for deposit: ";
+            cin>>amount;
+            my_account.input_transaction('d', amount);
+            cout<<"New account balance is "<<my_account.get_account_balance()<<" TL\n";}
+
+        else if(selection == 4){
+            cout<< "Enter an amount for withrawal: ";
+            cin>>amount;
+            my_account.input_transaction('w', amount);
+            cout<<"New account balance is "<<my_account.get_account_balance()<<" TL\n";}
+
+    }while(selection!=7);
     return 0;
 }
 
