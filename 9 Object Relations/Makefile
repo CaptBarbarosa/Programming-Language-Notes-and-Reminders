@@ -18,5 +18,15 @@
 	./4_hiding_main.exe
 
 
+5:
+	g++ -o 5_multiple_inheritence_example_main.exe 5_multiple_inheritence_example_main.cpp
+	./5_multiple_inheritence_example_main.exe
+
+
+6:
+	g++ -o 6_general_exercise_main.exe 6_general_exercise_main.cpp 6_general_exercise_codes.cpp
+	./6_general_exercise_main.exe
+
+
 clean_all:
 	rm *.exe
