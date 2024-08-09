@@ -12,4 +12,26 @@ And the lifetime of class B objects depend on the class A object.
 --> Generalization (inheritance "is a")
 
 
-Members of the subclass hides member of the superclass with the same name. 
+Members of the subclass hides member of the superclass with the same name.
+
+class A{
+    private:
+        int a;
+    public:
+        A(int a_given){a = a_given;}
+}
+
+class B: public A{
+    private:
+        int x;
+    public: //This is how you construct a subclass.
+    B(int a_given, x_given):A(a_given){x = x_given;}
+}
+
+Multiple inheritence is also possible
+
+--> class Circle: public Shape, public ShapeAttr
+
+
+If a base class is inherited by multiple classes we use virtual keywords. 
+Virtual keyword is for subclasses.
