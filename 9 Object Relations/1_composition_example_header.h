@@ -25,6 +25,8 @@ private:
 public:
     C(int, int, int);
     int get_value(void);
+    int get_value_a(void);
+    int get_value_b(void);
 };
 
 #endif

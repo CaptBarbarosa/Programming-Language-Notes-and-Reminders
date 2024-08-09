@@ -4,6 +4,8 @@ using namespace std;
 
 int main(){
     C class_c(1,2,3);
+    cout<< class_c.get_value_a()<< endl;
+    cout<< class_c.get_value_b()<< endl;
     cout << class_c.get_value()<< endl;
     return 0;
 }

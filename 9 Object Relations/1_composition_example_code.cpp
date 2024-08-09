@@ -17,3 +17,8 @@
     int C::get_value(void){
         return c;}
 
+    int C::get_value_a(void){
+        return class_a.get_value();}
+
+    int C::get_value_b(void){
+        return class_b.get_value();}

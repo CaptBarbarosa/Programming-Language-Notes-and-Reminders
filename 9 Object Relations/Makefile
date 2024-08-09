@@ -3,5 +3,5 @@
 	./1_composition_example_main.exe
 
 
-cleaa_all:
+clean_all:
 	rm *.exe
