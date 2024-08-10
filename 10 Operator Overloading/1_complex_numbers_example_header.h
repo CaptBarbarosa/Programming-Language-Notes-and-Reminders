@@ -9,11 +9,10 @@ class Complex{
         float real;
         float ima;
     public:
-        Complex(int, int);
+        Complex(float, float);
         friend ostream& operator<<(ostream& , Complex &);
         Complex operator+(Complex);
         friend Complex operator-(Complex, Complex);
 };
-
 
 #endif
