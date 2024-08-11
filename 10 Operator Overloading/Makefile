@@ -7,5 +7,10 @@
 	g++ -o 2_operator_overload_main.exe 2_operator_overload_main.cpp 2_operator_overload_code.cpp
 	./2_operator_overload_main.exe
 
+
+3:
+	g++ -o 3_overall_example_1_main.exe 3_overall_example_1_main.cpp 3_overall_example_1_codes.cpp
+	./3_overall_example_1_main.exe
+
 clean_all:
 	rm *.exe
