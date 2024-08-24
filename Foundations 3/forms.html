@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>FORMS</title>
+    </head>
+
+    <body>
+
+        <form>
+            <fieldset> <!--Fieldset is what sets the border-->
+                <legend>Profile Info</legend> <!--This is the title of the fieldset-->
+                Name:<input type="text" placeholder="Please enter your name"> <br>
+                <!--With the break tag (br) you are breaking it.-->
+                <!--With this you said you are expecting an input of text-->
+                <!--The placeholder is an HTML5 feature that tells user what to write-->
+                Email:<input type="email" placeholder="your@email.com"> <br>
+                Password: <input type="password"> <br><br>
+                
+                <!--The radio gives you the option of choosing one-->
+                Gender:<br>
+                <input type="radio" name="gender">Male <br>
+                <input type="radio" name="gender">Female <br>
+                <br><br>
+
+                Type of computer:<br>
+                <input type="checkbox"> I have a laptop <br>
+                <input type="checkbox"> I have a desktop <br>
+
+                <br><br>
+
+                Age:<br>
+                <select>
+                    <option>0-20</option>
+                    <option>20-40</option>
+                    <option>40++</option>
+                </select>
+
+                <br><br>
+
+                Biography:<br>
+                <textarea cols="30" rows="3"></textarea>
+            </fieldset>
+        </form>
+
+    </body>
+</html>
