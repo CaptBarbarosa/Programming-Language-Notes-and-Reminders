@@ -9,6 +9,7 @@ body{
     padding: 40px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #353535;
+    text-rendering: optimizeLegibility;
 }
 
 h1, h2, h3, h4, h5, h6{
