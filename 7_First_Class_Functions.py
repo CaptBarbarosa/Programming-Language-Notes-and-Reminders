@@ -23,5 +23,3 @@ print(f"Result is: {result}")
 
 result=calculate(5,0, operator=divide)
 print(f"Result is: {result}")
-
-print("Deneme")
