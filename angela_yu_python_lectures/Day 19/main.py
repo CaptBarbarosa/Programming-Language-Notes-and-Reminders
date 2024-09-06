@@ -1,6 +1,7 @@
 from turtle import Turtle, Screen
 
 tim = Turtle()
+tim.color("red")
 my_screen = Screen()
 
 def move_forwards():
