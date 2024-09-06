@@ -3,14 +3,13 @@ coffees = {
     "Latte" : [200, 150, 24, 2.5],
     "Cappucino" : [250, 100, 24, 3]
 }
-machine = [300, 200, 100, [0, 0, 0, 0]] # Water, Milk, Coffee, [1c, 5c, 10c, 25c]
+machine = [300, 200, 100, 0] # Water, Milk, Coffee
 
 def report():
     print("Water: ", machine[0])
     print("Milk: ", machine[1])
     print("Coffee: ", machine[2])
-    print("Money", (machine[-1][0] + machine[-1][1] * 5 + machine[-1][2] * 10 + machine[-1][0] * 25))
-
+    print("Money: ",machine[3])
 
 def check_resource_sufficiency(coffee_type):
     to_return = 1
@@ -43,7 +42,7 @@ def check_resource_sufficiency(coffee_type):
             to_return = 0
     return to_return
 
-def process_coins(answer): # I misunderstood this part and fucked myself. Its been late and I will deal with this later.
+def process_coins(answer): 
     print("Coffee of your choice costs: ", coffees[answer][-1])
     quarters = int(input("How many quarters? "))
     dimes = int(input("How many dimes? "))
@@ -53,25 +52,16 @@ def process_coins(answer): # I misunderstood this part and fucked myself. Its be
     if total_money_entered < coffees[answer][-1]:
         print("Sorry that's not enough money. Money refunded")
     else:
-        owed = coffees[answer][-1]
-        required_quarters =  owed / 0.25
-        if required_quarters < quarters:
-            machine[-1][-1] += quarters
-            owed = total_money_entered - quarters * 0.25
-            required_dimes = owed / 0.1
-            if required_dimes < dimes:
-                machine[-1][-2] += dimes
-                owed = total_money_entered - dimes * 0.1
-                required_dimes = owed / 0.05
-            else:
-                machine[-1][-2] += required_dimes
-                to_return = (dimes -required_dimes)*0.10 + nickels*0.05 + pennies*0.01
-                print("You have been refunded: ", to_return)
-        else:
-            print("Enough quarters")
-            machine[-1][-1] += required_quarters
-            to_return = (quarters - required_quarters)*0.25 + dimes*0.10 + nickels*0.05 + pennies*0.01
-            print("You have been refunded: ", to_return)
+        machine[-1] += coffees[answer][-1]
+        refund = total_money_entered - coffees[answer][-1]
+        print("Your refund is: ",refund)
+        
+def make_coffee(answer):
+    resource_need = coffees[answer]
+    print(resource_need)
+    for i in range(3):
+        machine[i] -= resource_need[i]
+    print(machine)
             
     
 
@@ -83,6 +73,7 @@ def menu():
             situation = check_resource_sufficiency(answer)
             if situation == 1:
                 process_coins(answer)
+                make_coffee(answer)
         elif answer == "report":
             report()
 
