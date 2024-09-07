@@ -14,8 +14,12 @@ screen.listen()
 screen.onkey(player.move_upwards, "Up")
 screen.onkey(player.move_backwards, "Down")
 
+cars = CarManager()
+
 game_is_on = True
 while player.ycor()<FINISH_LINE_Y:
     time.sleep(0.1)
     screen.update()
+    cars.create_car()
+    cars.move_cars()
 
