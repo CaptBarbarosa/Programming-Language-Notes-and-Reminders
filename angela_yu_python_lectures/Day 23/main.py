@@ -17,9 +17,17 @@ screen.onkey(player.move_backwards, "Down")
 cars = CarManager()
 
 game_is_on = True
-while player.ycor()<FINISH_LINE_Y:
+while game_is_on:
     time.sleep(0.1)
     screen.update()
     cars.create_car()
     cars.move_cars()
+    for car in cars.cars:
+        if car.distance(player)<20:
+            game_is_on = False
+    if player.ycor()>=FINISH_LINE_Y:
+        player.go_to_start()
+        cars.level_up()
+        
+        
 
