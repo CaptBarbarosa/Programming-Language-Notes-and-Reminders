@@ -1,3 +1,5 @@
+
+"""
 import csv
 temperatures = []
 
@@ -8,4 +10,13 @@ with open("weather_data.csv") as data_file:
         temperatures.append(row[1])
 temperatures.pop(0)
 print(temperatures)
+"""
+
+
+import pandas
+pandas.read_csv("weather_data.csv")
+
+
+
+
 
