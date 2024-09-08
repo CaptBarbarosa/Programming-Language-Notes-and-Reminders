@@ -14,7 +14,14 @@ print(temperatures)
 
 
 import pandas
-pandas.read_csv("weather_data.csv")
+data = pandas.read_csv("weather_data.csv")
+print(data)
+temps = data["temp"]
+print("temps are: ", temps, " its type is: ",type(temps))
+temps = temps.to_list()
+print(temps)
+print(sum(temps)/len(temps))
+
 
 
 
