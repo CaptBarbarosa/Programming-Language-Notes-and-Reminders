@@ -22,8 +22,12 @@ temps = temps.to_list()
 print(temps)
 print(sum(temps)/len(temps))
 
+print(data["temp"].mean()) #This is how you use pandas to calculate it.
+print(data["temp"].max())
+print(data.temp.max())
 
+print(data["condition"])
 
-
-
+print(data[data.day == "Monday"])
+print(data[data.temp == data.temp.max()])
 
