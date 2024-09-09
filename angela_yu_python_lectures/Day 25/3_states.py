@@ -17,15 +17,16 @@ turtle.onscreenclick(get_mouse_click_coor)
 
 
 answer = True
-correct_guesses = 0
-while answer!= "Exit" and correct_guesses != 50:
+guessed_states = []
+
+while answer!= "Exit" and len(guessed_states) < 50:
 
     answer = screen.textinput(title="Enter a state", prompt="What's another state ")
     data = pd.read_csv("50_states.csv")
     states = data.state.to_list()
 
-    if answer in states:
-        correct_guesses += 1
+    if answer in states and answer not in guessed_states:
+        guessed_states.append(answer)
         tim = turtle.Turtle()
         tim.hideturtle()
         tim.pu()
