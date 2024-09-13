@@ -1,0 +1,100 @@
+*{
+    font-family: sans-serif;
+}
+
+h1{
+    color: blue;
+    font-size: 26px;
+    font-style: italic;
+}
+
+h2{
+    font-size: 40px;
+}
+
+h3{
+    font-size: 30px;
+}
+
+h4{
+    font-size: 20px;
+    text-align: center;
+}
+
+p{
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+li{
+    font-size: 20px;
+}
+
+/*----------------------------------------------------------------*/
+
+/*With this we say paragraphs that are within headers, that are within article*/
+/*
+article header p{
+    font-style: italic;
+} 
+*/
+/*But using ids like below would be a lot more easier.*/
+#author{
+    font-style: italic;
+    font-size: 18px;
+}
+
+/*----------------------------------------------------------------*/
+
+/*
+footer p{
+    font-size: 16px;
+}*/
+/*As said before using ids makes it a lot easier.*/
+#copyright{
+    font-size: 16px;
+}
+
+
+h2, h3, h4{
+    color:#09d4e0;
+}
+
+h1, h4{
+    text-transform: uppercase;
+}
+
+
+/*IDs has to be unique, classes don't. We used classes for the author names*/
+/*For classes you put a "." before their class name*/
+.related-author{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/*Bullet point removal*/
+/*
+ul{
+    list-style: none;
+}
+*/
+.related{
+    list-style: none;
+}
+
+/*Classes are more common than IDs in real life.*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
