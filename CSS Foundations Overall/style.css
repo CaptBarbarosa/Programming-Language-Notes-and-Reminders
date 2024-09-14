@@ -7,6 +7,8 @@ h1{
     font-style: italic;
 }
 
+
+
 h2{
     font-size: 40px;
 }
@@ -115,7 +117,62 @@ li:last-child{
 
 
 
-/*Styling links*/
+
+                /*Styling links*/
+/*Remember it in this order. */
+a:link{
+    color: #1098ad;
+    text-decoration: none; /*Removes the text decoration from links.*/
+}
+
+a:visited{
+    color: #1098ad;
+}
+
+a:hover{ /*This one is for if the mouse gets over it.*/
+    color:orangered;
+    font-weight: bold;
+    text-decoration: underline dotted orangered;
+}
+
+a:active{/*If the user clicks on the link*/
+    background-color: black;
+    font-style: italic;
+}
+
+                /*Selector Hierarchy*/
+/*
+ID selectors have the highest priority.
+And then Classes or Pseudo-Classes (:) selectors
+Then Element selectors(p, div, li, etc)
+Lastly the universal selectors.
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
