@@ -3,7 +3,6 @@
 }
 
 h1{
-    color: blue;
     font-size: 26px;
     font-style: italic;
 }
@@ -55,9 +54,8 @@ footer p{
     font-size: 16px;
 }
 
-
-h2, h3, h4{
-    color:#09d4e0;
+h1, h2, h3, h4{
+    color: #1098ad;
 }
 
 h1, h4{
@@ -70,7 +68,8 @@ h1, h4{
 .related-author{
     font-size: 18px;
     font-weight: bold;
-}
+    border-bottom: dotted #0f99af;
+} 
 
 
 /*Bullet point removal*/
@@ -85,16 +84,38 @@ ul{
 
 /*Classes are more common than IDs in real life.*/
 
+.main_header{
+    background-color: #f7f7f7;
+}
+
+aside{
+    background-color: #f7f7f7;
+    /*If you said dotted instead of solid the border would have been dotted.*/
+    /*Instead of border-top if you said border it would give a border to entire aside.*/
+    border-top: 5px solid #1098ad;
+    border-bottom: 5px solid #1098ad;
+}
+
+
+/*We have a list and the list has elements. Instead of naming them, we can lean ın css.*/
+li:first-child{
+    font-weight: bold;
+}
+
+/*You could have wrote 1, 2 etc. too*/
+/*
+li:nth-child(odd){ 
+    color: red;
+}
+*/
+
+li:last-child{
+    font-style: italic;
+}
 
 
 
-
-
-
-
-
-
-
+/*Styling links*/
 
 
 

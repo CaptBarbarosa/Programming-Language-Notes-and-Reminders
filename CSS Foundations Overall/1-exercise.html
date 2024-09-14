@@ -16,26 +16,28 @@
     </head> 
  
     <body>
-        <img src="images/book.jpg" alt="A book image left to the writing" height="40" width="50">
-        <h1 style="display: inline;">The Code Magazine</h1>
-        <br><br>
-        <header>
-            <nav>
-                <a href="blog.com">Blog</a>
-                <a href="challange.com">Challenges</a>
-                <a href="flexbox.com">Flexbox</a>
-                <a href="css.com">CSS Grid</a>
-            </nav>
+        <header class="main_header">
+            <img src="images/book.jpg" alt="A book image left to the writing" height="40" width="50">
+            <h1 style="display: inline;">The Code Magazine</h1>
+            <br><br>
+                <nav>
+                    <a href="blog.com">Blog</a>
+                    <a href="challange.com">Challenges</a>
+                    <a href="flexbox.com">Flexbox</a>
+                    <a href="css.com">CSS Grid</a>
+                </nav>
         </header>
         
+        <header>
+            <article>
+                <h2>The Basic Language of the Web: HTML</h2>
+                <img src="images/a_woman.jpeg" alt="image of a woman" height="70" width="70">
+                    <p id="author">Posted by <strong>Laura Jones</strong> on <time datetime="2027-06-21">Monday, June 21st 2027.</time> </p>
+                <img src="images/html_image.png" height="300" width="700">
+            </article>
+        </header>
+
         <article>
-            <h2>The Basic Language of the Web: HTML</h2>
-            <img src="images/a_woman.jpeg" alt="image of a woman" height="70" width="70">
-            <header>
-                <p id="author">Posted by <strong>Laura Jones</strong> on <time datetime="2027-06-21">Monday, June 21st 2027.</time> </p>
-            </header>
-            <img src="images/html_image.png" height="300" width="700">
-            
             <p>Hypertext Markup Language (HTML) is the standard markup language for documents designed to be displayed in a web browser. It defines the content and structure of web content. It is often assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.</p>
             <p>In this post, let's focus on HTML. We'll learn what HTML is all about.</p>
         
@@ -65,15 +67,17 @@
             </ul>
         </article>
 
-        <h4>Related Posts</h4>
-        <ul class="related">
-            <li><img src="images/to_learn_web.jpg" height="50" width="70"><a href="https://coder-coder.com/learn-web-development/">How to learn Web Development</a></li>
-            <p class="related-author">By Jonas Schmedtmann</p>
-            <li><img src="images/css.jpg" height="50" width="70"><a href="https://medium.com/codex/the-hidden-powers-of-css-5f73111633f8">The Unknown Power of CSS</a></li>
-            <p class="related-author">By Jim Dillon</p>
-            <li><img src="images/js.webp" height="50" width="70"><a href="https://medium.com/@sannanmalikofficial/why-javascript-is-awesome-4f5ccd46f246">The Unknown Power of CSS</a></li>
-            <p class="related-author">By Matilda</p>
-        </ul>
+        <aside>
+            <h4>Related Posts</h4>
+            <ul class="related">
+                <li><img src="images/to_learn_web.jpg" height="50" width="70"><a href="https://coder-coder.com/learn-web-development/">How to learn Web Development</a></li>
+                <p class="related-author">By Jonas Schmedtmann</p>
+                <li><img src="images/css.jpg" height="50" width="70"><a href="https://medium.com/codex/the-hidden-powers-of-css-5f73111633f8">The Unknown Power of CSS</a></li>
+                <p class="related-author">By Jim Dillon</p>
+                <li><img src="images/js.webp" height="50" width="70"><a href="https://medium.com/@sannanmalikofficial/why-javascript-is-awesome-4f5ccd46f246">The Unknown Power of CSS</a></li>
+                <p class="related-author">By Matilda</p>
+            </ul>
+        </aside>
 
         <footer>
             <p id="copyright">Copyright &copy 2027 by The Code Magazine</p>
