@@ -61,7 +61,7 @@ h1, h2, h3, h4{
 }
 
 h1, h4{
-    text-transform: uppercase;
+    text-transform: uppercase; /*You can make the entire text uppercase (capitalize) with this*/
 }
 
 
@@ -147,32 +147,5 @@ And then Classes or Pseudo-Classes (:) selectors
 Then Element selectors(p, div, li, etc)
 Lastly the universal selectors.
 */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
