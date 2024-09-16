@@ -35,7 +35,7 @@ li{
 
 /*With this we say paragraphs that are within headers, that are within article*/
 /*
-article header p{
+header article p{
     font-style: italic;
 } 
 */
@@ -88,6 +88,7 @@ ul{
 
 .main_header{
     background-color: #f7f7f7;
+    padding: 20px; 
 }
 
 aside{
@@ -99,7 +100,7 @@ aside{
 }
 
 
-/*We have a list and the list has elements. Instead of naming them, we can lean ın css.*/
+/*We have a list and the list has elements. Instead of naming them, we can lean in css.*/
 li:first-child{
     font-weight: bold;
 }

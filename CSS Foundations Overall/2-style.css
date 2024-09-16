@@ -16,17 +16,22 @@
 }
 
 .price{
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .shipping{
+    font-size: 12px;
     text-transform: uppercase;
     color: #8e8c8c;
     font-weight: bold;
 }
 
-.more-info{
+.more-info, .more-info:visited{
     color: #151414;
+}
+
+.more-info:hover{
+    text-decoration: none;
 }
 
 .details-title{
@@ -37,28 +42,12 @@
 
 .details-list{
     font-size: 16px;
+    list-style: square;
 }
 
 .add-cart{
     font-size: 22px;
     color: #dedada;
     background-color: #151414;
+    text-transform: uppercase;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
