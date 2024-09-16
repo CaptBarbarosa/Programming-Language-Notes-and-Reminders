@@ -1,4 +1,5 @@
 *{
+    /*color: green;*7 /*With this you can change the color of the text. */
     font-family: sans-serif;
 }
 
@@ -25,10 +26,12 @@ h4{
 p{
     font-size: 22px;
     line-height: 1.5;
+    margin-bottom: 15px;
 }
 
 li{
     font-size: 20px;
+    margin-bottom: 10px;
 }
 
 /*----------------------------------------------------------------*/
@@ -88,7 +91,8 @@ ul{
 
 .main_header{
     background-color: #f7f7f7;
-    padding: 20px; 
+    padding: 20px 40px; /*Top, Bottom, Left, Right*/
+
 }
 
 aside{
@@ -97,6 +101,7 @@ aside{
     /*Instead of border-top if you said border it would give a border to entire aside.*/
     border-top: 5px solid #1098ad;
     border-bottom: 5px solid #1098ad;
+    padding: 50px 0;
 }
 
 
@@ -114,6 +119,7 @@ li:nth-child(odd){
 
 li:last-child{
     font-style: italic;
+    margin-bottom: 0;
 }
 
 
@@ -148,5 +154,24 @@ And then Classes or Pseudo-Classes (:) selectors
 Then Element selectors(p, div, li, etc)
 Lastly the universal selectors.
 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
