@@ -155,7 +155,9 @@ Then Element selectors(p, div, li, etc)
 Lastly the universal selectors.
 */
 
-
+.container{
+    width: 700px;
+}
 
 
 
