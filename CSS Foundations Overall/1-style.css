@@ -173,7 +173,7 @@ body{
     position: relative;
 }
 
-
+ 
 button{
     font-size: 22px;
     padding: 20px;
@@ -183,6 +183,13 @@ button{
     bottom: 50px;
     right: 50px;
 }
+
+/*
+h2::first-letter {
+    font-size: 60px;
+    font-weight: bold;
+}
+*/ 
 
 
 
