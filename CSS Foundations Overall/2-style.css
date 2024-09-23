@@ -27,6 +27,7 @@
     text-transform: uppercase;
     color: #8e8c8c;
     font-weight: bold;
+    margin-bottom: 20px;
 }
 
 .more-info, .more-info:visited{
@@ -59,7 +60,5 @@
 
 
 .exercise_3{
-    margin-left: auto;
-    margin-right: auto;
-    
+    margin: 50px auto;
 }
