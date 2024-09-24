@@ -90,6 +90,7 @@ ul{
 /*Classes are more common than IDs in real life.*/
 
 .main_header{
+    margin-bottom: 50px;
     background-color: #f7f7f7;
     padding: 20px 40px; /*Top, Bottom, Left, Right*/
 
@@ -156,14 +157,14 @@ Lastly the universal selectors.
 */
 
 .container{
-    width: 50%;
+    width: 1200px;
     margin-left: auto;
     margin-right: auto;
 }
 
 nav a:link{
-    color: orangered;
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-left: 30px;
     display: inline-block;
 }
 
@@ -199,13 +200,35 @@ h2::first-letter {
 }
 
 .author{
-    padding-left: 90px;
+    margin-left: 90px;
+    margin-top: 10px;
 }
 
+h1{
+    float: left;
+}
 
+nav{
+    float: right;
+}
 
+.clear{
+    clear: both;
+}
 
+article{
+    width: 825px;
+    float: left;
+}
 
+aside{
+    width: 300px;
+    float: right;
+}
+
+footer{
+    clear: both;
+}
 
 
 
