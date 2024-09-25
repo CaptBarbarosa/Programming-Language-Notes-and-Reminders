@@ -195,6 +195,7 @@ h2::first-letter {
 
         /*FLOATS*/
 
+
 .author-img{
     float: left;
 }
@@ -229,6 +230,4 @@ aside{
 footer{
     clear: both;
 }
-
-
 
