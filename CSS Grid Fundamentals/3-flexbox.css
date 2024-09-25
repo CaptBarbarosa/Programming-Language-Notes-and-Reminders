@@ -1,0 +1,251 @@
+*{
+    /*color: green;*7 /*With this you can change the color of the text. */
+    font-family: sans-serif;
+}
+
+h1{
+    font-size: 26px;
+    font-style: italic;
+}
+
+
+
+h2{
+    font-size: 40px;
+}
+
+h3{
+    font-size: 30px;
+}
+
+h4{
+    font-size: 20px;
+    text-align: center;
+}
+
+p{
+    font-size: 22px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+li{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/*----------------------------------------------------------------*/
+
+/*With this we say paragraphs that are within headers, that are within article*/
+/*
+header article p{
+    font-style: italic;
+} 
+*/
+/*But using ids like below would be a lot more easier.*/
+#author{
+    font-style: italic;
+    font-size: 18px;
+}
+
+/*----------------------------------------------------------------*/
+
+/*
+footer p{
+    font-size: 16px;
+}*/
+/*As said before using ids makes it a lot easier.*/
+#copyright{
+    font-size: 16px;
+}
+
+h1, h2, h3, h4{
+    color: #1098ad;
+}
+
+h1, h4{
+    text-transform: uppercase; /*You can make the entire text uppercase (capitalize) with this*/
+}
+
+
+/*IDs has to be unique, classes don't. We used classes for the author names*/
+/*For classes you put a "." before their class name*/
+.related-author{
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: dotted #0f99af;
+} 
+
+
+/*Bullet point removal*/
+/*
+ul{
+    list-style: none;
+}
+*/
+.related{
+    list-style: none;
+}
+
+/*Classes are more common than IDs in real life.*/
+
+.main_header{
+    margin-bottom: 20px;
+    background-color: #f7f7f7;
+    /*padding: 20px 40px;*/ /*Top, Bottom, Left, Right*/
+
+}
+
+aside{
+    background-color: #f7f7f7;
+    /*If you said dotted instead of solid the border would have been dotted.*/
+    /*Instead of border-top if you said border it would give a border to entire aside.*/
+    border-top: 5px solid #1098ad;
+    border-bottom: 5px solid #1098ad;
+    padding: 50px 0;
+}
+
+
+/*We have a list and the list has elements. Instead of naming them, we can lean in css.*/
+li:first-child{
+    font-weight: bold;
+}
+
+/*You could have wrote 1, 2 etc. too*/
+/*
+li:nth-child(odd){ 
+    color: red;
+}
+*/
+
+li:last-child{
+    font-style: italic;
+    margin-bottom: 0;
+}
+
+
+
+
+                /*Styling links*/
+/*Remember it in this order. */
+a:link{
+    color: #1098ad;
+    text-decoration: none; /*Removes the text decoration from links.*/
+}
+
+a:visited{
+    color: #1098ad;
+}
+
+a:hover{ /*This one is for if the mouse gets over it.*/
+    color:orangered;
+    font-weight: bold;
+    text-decoration: underline dotted orangered;
+}
+
+a:active{/*If the user clicks on the link*/
+    background-color: black;
+    font-style: italic;
+}
+
+                /*Selector Hierarchy*/
+/*
+ID selectors have the highest priority.
+And then Classes or Pseudo-Classes (:) selectors
+Then Element selectors(p, div, li, etc)
+Lastly the universal selectors.
+*/
+
+.container{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav a:link{
+    /*
+    margin-top: 30px;
+    margin-left: 30px;
+    */
+    display: inline-block;
+}
+
+body{
+    color: #444;
+    font-family: sans-serif;
+    position: relative;
+}
+
+ 
+button{
+    font-size: 22px;
+    padding: 20px;
+    cursor: pointer;
+    
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+}
+
+/*
+h2::first-letter {
+    font-size: 60px;
+    font-weight: bold;
+}
+*/ 
+
+
+
+/*FLEXBOX*/
+
+.main_header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.author-box{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.author{
+    margin-bottom: 0;
+    margin-left: 15px;
+}
+
+.related-post{
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+
+.related-link:link{
+    font-size: 17px;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.related-author{
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: italic;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
