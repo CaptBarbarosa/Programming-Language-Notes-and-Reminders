@@ -73,7 +73,7 @@ h1, h4{
 .related-author{
     font-size: 18px;
     font-weight: bold;
-    border-bottom: dotted #0f99af;
+    /*border-bottom: dotted #0f99af;*/
 } 
 
 
@@ -102,7 +102,7 @@ aside{
     /*Instead of border-top if you said border it would give a border to entire aside.*/
     border-top: 5px solid #1098ad;
     border-bottom: 5px solid #1098ad;
-    padding: 50px 0;
+    padding: 50px 40px;
 }
 
 
@@ -204,6 +204,10 @@ h2::first-letter {
     justify-content: space-between;
 }
 
+.main_header nav a{
+    margin-right: 20px;
+}
+
 .author-box{
     display: flex;
     align-items: center;
@@ -235,9 +239,18 @@ h2::first-letter {
 }
 
 
+.row{
+    display: flex;
+    gap: 75px;
+}
 
+article{
+    flex: 0 0 825px;
+}
 
-
+aside{
+    flex: 0 0 300px;
+}
 
 
 
