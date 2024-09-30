@@ -240,7 +240,6 @@ h2::first-letter {
     font-style: italic;
 }
 
-
 .row{
     display: flex;
     gap: 75px;
@@ -253,4 +252,3 @@ article{
 aside{
     flex: 0 0 300px;
 }
-
