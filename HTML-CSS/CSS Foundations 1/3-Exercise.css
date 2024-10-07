@@ -1,0 +1,33 @@
+body{
+    background: #333;
+    font-family: Georgia, 'Times New Roman', Times, serif; /*Tries to give Georgia font, if the user doesn't have that tries to give Times and if the user doesn't have that gives serif*/
+    color: #fff;
+    font-size: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 { /*This is called grouping. We use this when we want all the grouped headers to be given the same elements */
+    font-family: Helvetica, Arial, sans-serif;
+    color: #ffcc33
+}
+
+h1{
+    border: dashed 1px #ffcc33;
+    background: #000;
+    font-size: 2em; /*1em is the current font size so 2em is the double of it. Meaning 40px*/
+    padding: 10px;
+}
+
+ol{
+    border: solid 4px #bce3ed;
+    background: #33bcde;
+    padding: 20px 20px 20px 40px; /*Top, right, bottom, left*/
+    margin: 5% 0; /*Top and the bottom, Right and the left*/ /*Top and bottom have 5 percent, left and right has 0 percent margin*/
+}
+
+a{
+    color: #ffcc33;
+}
+
+strong{
+    color: purple;
+}
