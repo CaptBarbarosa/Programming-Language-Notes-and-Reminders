@@ -1,0 +1,69 @@
+*{/*Means everythinh*/
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background: #4d2d06;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+}
+
+.primary-box{
+    background: #222;
+    color: #eee;
+    font-size: 24px;
+    margin: 0 0 10px;
+    padding: 10px;
+}
+
+.secondary-box{
+    background: #eee;
+    color: #222;
+    font-size: 24px;
+    margin: 0 0 10px;
+    padding: 10px;
+}
+
+.inside-box{
+    margin: 20px 0;
+    padding: 10px;
+    background: #94efff;
+    color: #555;
+}
+
+
+
+/*Descendant Selector*/
+.primary-box h2{
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.primary-box p em{
+    color: #32b0ff;
+}
+
+
+
+.secondary-box p{
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.secondary-box p em{
+    color: #fc3ffc;
+}
+
+/*Grouping Selector*/
+
+.inside-box h3, .inside-box p{ /*You grouped them*/
+    font-size: 20px;
+}
+
+.primary-box, .secondary-box{
+    font-size: 24px;
+    margin: 0 0 10px;
+    padding: 10px;
+}
