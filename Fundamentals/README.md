@@ -1,0 +1,1 @@
+This repository serves as a personal reminder for my Python studies. It contains notes and examples from my first year of learning Python, covering fundamental topics such as list, dictionaries, OOP, some methods and other basic concepts.
