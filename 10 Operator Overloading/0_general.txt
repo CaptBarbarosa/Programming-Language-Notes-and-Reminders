@@ -1,3 +1,0 @@
-return_type operator*(parameters)
-
-
