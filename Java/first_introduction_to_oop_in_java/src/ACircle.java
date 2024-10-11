@@ -1,12 +1,19 @@
 public class ACircle {
+    static int numberOfObjects = 0;
     double radius;
 
     public ACircle() {
+        numberOfObjects ++;
         radius = 1.0;
     }
 
     public ACircle(double newRadius) {
         radius = newRadius;
+        numberOfObjects ++;
+    }
+
+    public static int getNumberOfObjects() {
+        return numberOfObjects;
     }
 
     public double getArea() {
