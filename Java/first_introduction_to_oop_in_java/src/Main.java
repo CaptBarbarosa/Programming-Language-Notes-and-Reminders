@@ -1,4 +1,4 @@
-public class MainClass {
+public class Main {
     public static void main(String[] args) {
         ACircle circle = new ACircle(5.0);
         double area = circle.getArea();
