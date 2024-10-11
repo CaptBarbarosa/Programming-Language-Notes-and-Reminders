@@ -12,7 +12,7 @@ public class ACircle {
     public double getArea() {
         return radius * radius * Math.PI;
     }
-    
+
     /*You need main to run the program*/
     /*
     public static void main(String[] args){
