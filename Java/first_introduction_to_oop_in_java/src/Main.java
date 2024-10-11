@@ -17,5 +17,9 @@ public class Main {
         System.out.println("String2: " + str4);
         System.out.println("Same object? " + (str1 == str4)); //To compare strings use .equals method.
         System.out.println("Same value? " + str1.equals(str4));
+
+        String pennsylvania = "65000";
+        int penn = Integer.parseInt(pennsylvania);
+        System.out.println("penn is: "+penn);
     }
 }
