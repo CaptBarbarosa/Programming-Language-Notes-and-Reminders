@@ -4,5 +4,7 @@ public class Fourt_Main_Exercise {
         oracle_stock.setCurrent_price(34.35);
         oracle_stock.setPrevious_closing_price(34.5);
         System.out.println("Percentage change is: "+oracle_stock.getChangePrice());
+
+        Fourth_Account_Exercise account;
     }
 }
