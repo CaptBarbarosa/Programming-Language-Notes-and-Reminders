@@ -1,0 +1,4 @@
+You can think of them as a special feature of its implemented classes.
+You can think of abstract classes like a template. They encapsulate common behaviours.
+You can't instantiate them alone.
+The abstract methods within the abstract classes HAS TO BE implemented by the subclasses that inherit them.
