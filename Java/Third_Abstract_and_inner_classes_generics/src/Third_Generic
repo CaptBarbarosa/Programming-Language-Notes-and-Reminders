@@ -1,0 +1,3 @@
+    The generic provides us a way to create classes, interfaces and methods
+that can operate on any type of data while providing type safety at compile time.
+

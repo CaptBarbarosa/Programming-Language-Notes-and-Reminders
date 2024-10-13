@@ -1,0 +1,3 @@
+Unlike the abstract classes, interfaces don't include any implementations.
+If a class implements an interface it HAS TO IMPLEMENT EVERY METHOD in it.
+Normally, the classes can't inherit/extend more than one class. But they can implement many interfaces.
