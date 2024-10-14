@@ -31,5 +31,8 @@ public class Third_Main {
         for(i=0; i<10; i++){
             my_array.get(i).print();
         }
+        //Without the <E extends Comparable<E>> you would have been able to compile and run this code
+        //Even though you'd get an error.
+        //Third_safe_generics.max("Welcome", 123);
     }
 }
