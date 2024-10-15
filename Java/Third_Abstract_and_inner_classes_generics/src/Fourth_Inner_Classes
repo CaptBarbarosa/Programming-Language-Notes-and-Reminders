@@ -1,0 +1,9 @@
+Classes declared inside other classes.
+
+class Outer{
+    class Nested{
+    }
+}
+   Non-static inner (Nested) classes has access to other members of its
+enclosing class.
+   Static classes on the other hand don't have that access.
