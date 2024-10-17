@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Objects;
 import java.util.Random;
 
 public class Third_Main {
@@ -34,5 +35,20 @@ public class Third_Main {
         //Without the <E extends Comparable<E>> you would have been able to compile and run this code
         //Even though you'd get an error.
         //Third_safe_generics.max("Welcome", 123);
+        Third_Generic_Classes<Integer> my_int = new Third_Generic_Classes<>();
+        my_int.setObject_given(123);
+        System.out.println("Number: "+my_int.getObject_given());
+
+        Third_Generic_Classes<String> my_string = new Third_Generic_Classes<>("This is a string");
+        System.out.println("String: "+my_string.getObject_given());
+
+        //You could have ArrayList<Object> however, it wouldn't be type safe.
+        ArrayList<Object> cats = new ArrayList<>();
+        Integer int_to_add= Integer.parseInt("20");
+        System.out.println("int to add: "+ int_to_add);
+        cats.add(int_to_add);
+        cats.add(1);
+        cats.add("Hello");
+
     }
 }
