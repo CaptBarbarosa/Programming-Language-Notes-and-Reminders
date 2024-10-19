@@ -16,6 +16,9 @@ public class Main {
                 System.out.println(traceElements[i].getLineNumber() + ")");
             }
         }
+        //System.out.println(sum(new int[] {1, 2, 3, 4, 5}));
+        System.out.println("The exception is over and it prints this before ending the execution.");
+        System.out.println("If you didn't have the try block it would exit with code 1.");
     }
 
     private static int sum(int[] list) {
