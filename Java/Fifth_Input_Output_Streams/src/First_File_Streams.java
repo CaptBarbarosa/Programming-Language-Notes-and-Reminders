@@ -8,6 +8,7 @@ public class First_File_Streams {
         FileOutputStream output = new FileOutputStream("src/examples/First_example.dat");
         for(int i=1; i <= 10; i++){
             output.write(i);}
+        //output.writeUTF("Hello"); //You wouldn't be able to write string using FileOutputStream
         output.close();
 
         FileInputStream input = new FileInputStream("src/examples/First_example.dat");
