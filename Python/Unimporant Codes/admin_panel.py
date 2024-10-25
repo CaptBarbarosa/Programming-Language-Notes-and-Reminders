@@ -3,9 +3,6 @@ from tkinter import ttk
 import tkinter as tk
 from tkinter import messagebox
 
-# Ensure you have customtkinter installed:
-# pip install customtkinter
-
 # Set appearance mode and default color theme
 ctk.set_appearance_mode("dark")
 ctk.set_default_color_theme("blue")
