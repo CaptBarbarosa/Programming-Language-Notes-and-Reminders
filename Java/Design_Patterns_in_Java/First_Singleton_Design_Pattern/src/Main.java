@@ -1,8 +1,8 @@
 public class Main {
     public static void main(String[] args) throws Exception {
-        first_singleton_example singleInstance = first_singleton_example.getInstance();
+        first_singleton_example_lazy_implementation singleInstance = first_singleton_example_lazy_implementation.getInstance();
         singleInstance.showMessage();
-        first_singleton_example anotherReference = first_singleton_example.getInstance();
+        first_singleton_example_lazy_implementation anotherReference = first_singleton_example_lazy_implementation.getInstance();
         System.out.println(singleInstance == anotherReference);
 
         //Please observe that if we comment out the "private first_singleton_example() {}" part of the first_singleton_example we are able to create multiple instances of it. 
