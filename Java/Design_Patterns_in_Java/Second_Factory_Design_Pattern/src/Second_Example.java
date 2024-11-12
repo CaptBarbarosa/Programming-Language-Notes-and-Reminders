@@ -58,7 +58,7 @@ class EnglishLanguage implements Language {
 }
 
 // Step 3: Create the LanguageFactory class
-class LanguageFactory {
+final class LanguageFactory {
     public static Language createLanguage(String language) {
         switch (language.toLowerCase()) {
             case "french":
@@ -80,6 +80,8 @@ public class Second_Example {
         System.out.println("french instanceof EnglishLanguage: " + (french instanceof EnglishLanguage) + " french instanceof FrenchLanguage: " + (french instanceof FrenchLanguage)+ " french instanceof Language: " + (french instanceof Language));
         if(french instanceof FrenchLanguage){
             ((FrenchLanguage) french).onlyfrench();
+            //FrenchLanguage second_french = (FrenchLanguage) french;
+            //second_french.onlyfrench();
         }
         Language english = LanguageFactory.createLanguage("English");
         Language spanish = LanguageFactory.createLanguage("Spanish");
@@ -87,9 +89,11 @@ public class Second_Example {
         String[] messages = {"books", "phoneno", "cloths"};
         
         for (String msg : messages) {
-            System.out.println("French: " + french.localize(msg));
-            System.out.println("English: " + english.localize(msg));
-            System.out.println("Spanish: " + spanish.localize(msg));
+            System.out.println(msg + " in French: " + french.localize(msg));
+            System.out.println(msg + " in English: " + english.localize(msg));
+            System.out.println(msg + " in Spanish: " + spanish.localize(msg));
         }
+        EnglishLanguage my_eng = (EnglishLanguage) LanguageFactory.createLanguage("English");
+        my_eng.onlyEnglish();
     }
 }
