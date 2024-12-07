@@ -1,0 +1,12 @@
+# Ignore Visual Studio-related files and folders
+.vs/
+
+# Ignore other IDE and editor configurations
+.idea/
+.vscode/
+
+# Ignore compiled binaries and temporary files
+bin/
+obj/
+*.log
+*.tmp
