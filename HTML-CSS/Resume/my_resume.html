@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        /* Critical color printing styles */
+        * {
+            -webkit-print-color-adjust: exact !important;
+            print-color-adjust: exact !important;
+            color-adjust: exact !important;
+        }
+        
+        @page {
+            margin: 0;
+            size: A4;
+        }
+
+        @media print {
+            body {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+                color-adjust: exact;
+                margin: 0;
+                padding: 0;
+            }
+            
+            .sidebar {
+                background-color: #1a2f47 !important;
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+                color-adjust: exact !important;
+            }
+
+            .page {
+                page-break-after: always;
+            }
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-size: 14px;
+            line-height: 1.4;
+            font-family: Arial, sans-serif;
+            background-color: white;
+        }
+        
+        .page {
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+            min-height: 100vh;
+            background-color: white;
+        }
+
+        .page-break {
+            page-break-before: always;
+        }
+
+        .content-column {
+            flex: 2;
+            padding: 1.5rem;
+            background-color: white;
+        }
+
+        .sidebar {
+            flex: 1;
+            background-color: #1a2f47;
+            color: white;
+            padding: 1.5rem;
+            min-width: 220px;
+        }
+
+        .section {
+            margin-bottom: 1.5rem;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        h2 {
+            margin: 1rem 0 0.5rem 0;
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+
+        p {
+            margin: 0.3rem 0;
+        }
+
+        .languages-bar {
+            background: rgba(255, 255, 255, 0.2);
+            height: 4px;
+            width: 100%;
+            margin-top: 2px;
+        }
+
+        .languages-fill {
+            background: white;
+            height: 100%;
+        }
+
+        ul {
+            margin: 0.3rem 0;
+            padding-left: 1.2rem;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .project-details {
+            padding-left: 1.2rem;
+            margin: 0.5rem 0;
+        }
+
+        .email-link {
+            word-break: break-all;
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .links a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Page 1 -->
+    <div class="page">
+        <div class="content-column">
+            <h1>Kaan Tandogan</h1>
+            <p style="color: #666; text-transform: uppercase">Undergraduate Student</p>
+
+            <div class="section">
+                <h2>Profile</h2>
+                <p>Curious and hardworking computer engineering student with a strong interest in cyber security and mobile app development. Experienced in web development and cybersecurity with proficiency in C/C++, HTML/CSS, Java, JavaScript, Python and SQL. Passionate about expanding my expertise in mobile app development and eager to contribute innovative solutions in a dynamic team environment.</p>
+            </div>
+
+            <div class="section">
+                <h2>Education</h2>
+                <p><strong>Computer Engineering, Middle East Technical University</strong><br>
+                SEPTEMBER 2021 — PRESENT<br>
+                GPA: 2.92</p>
+            </div>
+
+            <div class="section">
+                <h2>Internships</h2>
+                <p><strong>Cyber Security Intern, Secure Way, Online</strong></p>
+                <p>You can find my notes here:<br>
+                https://github.com/CaptBarbarosa/Internship-Notes/tree/main</p>
+                <ul>
+                    <li>I have researched and practiced about network fundamentals.</li>
+                    <li>I have practiced network pentesting.</li>
+                    <li>I have researched about windows fundamentals.</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Projects</h2>
+                <p>We developed a mobile application in Northern Cyprus that enables users to quickly and easily find service providers based on their needs and locations.</p>
+                <div class="project-details">
+                    <p><strong>Frontend Design:</strong> Created a user-friendly and modern interface using React Native</p>
+                    <p><strong>Backend Architecture:</strong> Designed a microservices architecture using FastAPI (Python) and Spring Boot (Java) to provide various functionalities.</p>
+                    <p><strong>Database Development:</strong> Built a database based on MySQL codes for categorizing service providers and sourced service provider data in collaboration with Next Technology for Northern Cyprus.</p>
+                    <p><strong>Location-Based Features:</strong> Implemented location-based search, plotting servicecovers on map, and distance calculation functionalities using Google Maps API.</p>
+                    <p><strong>AI Integration:</strong> Utilized an AI API to understand and optimize user fit.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <div class="section">
+                <h2>Details</h2>
+                <p>Yayla Mah.Cengiz Topel<br>
+                Cad.Muradam Apt.No:61 D-11<br>
+                Tuzla İSTANBUL<br>
+                İstanbul<br><br>
+                Phone Number: 05339282150<br>
+                <a href="mailto:tandogankaan5@gmail.com" class="email-link">tandogankaan5@gmail.com</a></p>
+            </div>
+
+            <div class="section">
+                <h2>Links</h2>
+                <p><a href="https://github.com/CaptBarbarosa" class="email-link">Github</a></p>
+                <p><a href="https://www.linkedin.com/in/kaan-tando%C4%9Fan-2400601ab/" class="email-link">Linkedin</a></p>
+                <p><a href="https://tryhackme.com/r/p/AdmBarbarossa" class="email-link">TryHackMe</a></p>
+            </div>
+
+            <div class="section">
+                <h2>Skills</h2>
+                <ul>
+                    <li>Algorithms</li>
+                    <li>C/C++ Programming</li>
+                    <li>Data Structures</li>
+                    <li>Database Design</li>
+                    <li>HTML/CSS</li>
+                    <li>JavaScript</li>
+                    <li>Java</li>
+                    <li>Logic Design</li>
+                    <li>Network Pentesting</li>
+                    <li>Operating Systems</li>
+                    <li>Python</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Languages</h2>
+                <div>
+                    Turkish
+                    <div class="languages-bar">
+                        <div class="languages-fill" style="width: 100%"></div>
+                    </div>
+                </div>
+                <div>
+                    English
+                    <div class="languages-bar">
+                        <div class="languages-fill" style="width: 75%"></div>
+                    </div>
+                </div>
+                <div>
+                    French
+                    <div class="languages-bar">
+                        <div class="languages-fill" style="width: 25%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Hobbies</h2>
+                <ul>
+                    <li>Mythology</li>
+                    <li>Archeology</li>
+                    <li>Cyber Security</li>
+                    <li>Kickboxing</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 2 -->
+    <div class="page page-break">
+        <div class="content-column">
+            <div class="section">
+                <h2>Courses</h2>
+                <ul>
+                    <li>C Programming</li>
+                    <li>Data Structures & Algorithms</li>
+                    <li>Database Design</li>
+                    <li>Formal Languages and Abstract Machines</li>
+                    <li>Microprocessors & Embedded Systems Development</li>
+                    <li>Operating Systems</li>
+                    <li>Object Orient.prog. Lang. & Systems with Java</li>
+                    <li>Programming Language Concepts</li>
+                    <li>Software Development with Scripting Languages with Python</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Awards</h2>
+                <ul>
+                    <li>2021-2022 Spring Honor Roll</li>
+                    <li>12inci Cumhuriyet Satranç Turnuvası Minikler 1.si</li>
+                    <li>Küçük Ustalar Satranç Turnuvası Minikler Kategorisi 3.Sınıf Erkekler Dördüncüsü</li>
+                    <li>Eyüboğlu Eğitim Kurumları 13.cü Dostluk Satranç Turnuvası Küçükler Üçüncüsü (2008)</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Extra-curricular activities</h2>
+                <ul>
+                    <li>Chess</li>
+                    <li>Kick-Boxing</li>
+                    <li>Teknofest Mechatrover<br>
+                    I am responsible for developing User Interface and implementing algorithms</li>
+                    <li>METU NCC IEEE RAS<br>
+                    I am teaching students robotic programming on IEEE.</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>References</h2>
+                <p>Can Tarakcı from Secure Way<br>
+                can.tarakci@secureway.com.tr</p>
+                <p>Mesut Türk from IBTech<br>
+                mesut.turk@softtech.com.tr</p>
+                <p>Yeliz Yesilada from ODTÜ<br>
+                yyesil@metu.edu.tr</p>
+                <p>Şükrü Eraslan from ODTÜ<br>
+                seraslan@metu.edu.tr</p>
+            </div>
+        </div>
+
+        <div class="sidebar" style="min-height: 100vh">
+            <!-- Empty sidebar to maintain layout -->
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        /* Same critical color printing styles as English version */
+        * {
+            -webkit-print-color-adjust: exact !important;
+            print-color-adjust: exact !important;
+            color-adjust: exact !important;
+        }
+        
+        @page {
+            margin: 0;
+            size: A4;
+        }
+
+        @media print {
+            body {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+                color-adjust: exact;
+                margin: 0;
+                padding: 0;
+            }
+            
+            .sidebar {
+                background-color: #1a2f47 !important;
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+                color-adjust: exact !important;
+            }
+
+            .page {
+                page-break-after: always;
+            }
+        }
+        
+        /* Same styles as English version */
+        body {
+            margin: 0;
+            padding: 0;
+            font-size: 14px;
+            line-height: 1.4;
+            font-family: Arial, sans-serif;
+            background-color: white;
+        }
+        
+        .page {
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+            min-height: 100vh;
+            background-color: white;
+        }
+
+        .page-break {
+            page-break-before: always;
+        }
+
+        .content-column {
+            flex: 2;
+            padding: 1.5rem;
+            background-color: white;
+        }
+
+        .sidebar {
+            flex: 1;
+            background-color: #1a2f47;
+            color: white;
+            padding: 1.5rem;
+            min-width: 220px;
+        }
+
+        .section {
+            margin-bottom: 1.5rem;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        h2 {
+            margin: 1rem 0 0.5rem 0;
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+
+        p {
+            margin: 0.3rem 0;
+        }
+
+        .languages-bar {
+            background: rgba(255, 255, 255, 0.2);
+            height: 4px;
+            width: 100%;
+            margin-top: 2px;
+        }
+
+        .languages-fill {
+            background: white;
+            height: 100%;
+        }
+
+        ul {
+            margin: 0.3rem 0;
+            padding-left: 1.2rem;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .project-details {
+            padding-left: 1.2rem;
+            margin: 0.5rem 0;
+        }
+
+        .email-link {
+            word-break: break-all;
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .links a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Sayfa 1 -->
+    <div class="page">
+        <div class="content-column">
+            <h1>Kaan Tandogan</h1>
+            <p style="color: #666; text-transform: uppercase">Lisans Öğrencisi</p>
+
+            <div class="section">
+                <h2>Profil</h2>
+                <p>Cyber security ve mobil uygulama geliştirmeye güçlü bir ilgisi olan meraklı ve çalışkan bir bilgisayar mühendisliği öğrencisiyim. Web development ve cyber security alanlarında deneyimli, C/C++, HTML/CSS, Java, JavaScript, Python ve SQL dillerinde uzmanlığa sahibim. Mobil uygulama geliştirme alanındaki uzmanlığımı genişletmeye tutkulu ve dinamik bir takım ortamında yenilikçi çözümler sunmaya istekliyim.</p>
+            </div>
+
+            <div class="section">
+                <h2>Eğitim</h2>
+                <p><strong>Bilgisayar Mühendisliği, Orta Doğu Teknik Üniversitesi</strong><br>
+                EYLÜL 2021 — GÜNÜMÜZ<br>
+                GNO: 2.92</p>
+            </div>
+
+            <div class="section">
+                <h2>Stajlar</h2>
+                <p><strong>Cyber Security Stajyeri, Secure Way, Online</strong></p>
+                <p>Notlarımı buradan bulabilirsiniz:<br>
+                https://github.com/CaptBarbarosa/Internship-Notes/tree/main</p>
+                <ul>
+                    <li>Network temelleri hakkında bilgi edindim.</li>
+                    <li>Network pentesting uygulamaları yaptım.</li>
+                    <li>Network temelleri hakkında araştırma ve uygulama yaptım.</li>
+                    <li>Windows temelleri hakkında araştırma yaptım.</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Projeler</h2>
+                <p>Kuzey Kıbrıs'ta kullanıcıların ihtiyaçlarına ve konumlarına göre hizmet sağlayıcıları hızlı ve kolay bir şekilde bulmalarını sağlayan bir mobil uygulama geliştirdik.</p>
+                <div class="project-details">
+                    <p><strong>Frontend Design:</strong> React Native kullanarak kullanıcı dostu ve modern bir arayüz tasarladım.</p>
+                    <p><strong>Backend Architecture:</strong> Çeşitli işlevler sağlamak için FastAPI (Python) ve Spring Boot (Java) kullanarak microservices mimarisi tasarladım.</p>
+                    <p><strong>Database Development:</strong> Kuzey Kıbrıs için Next Technology ile işbirliği içinde, hizmet sağlayıcıları kategorize etmek için MySQL kodları tabanlı bir veritabanı oluşturdum.</p>
+                    <p><strong>Location-Based Features:</strong> Google Maps API kullanarak konum tabanlı arama, harita üzerinde servis kapsamı gösterimi ve mesafe hesaplama işlevlerini uyguladım.</p>
+                    <p><strong>AI Integration:</strong> Kullanıcı uyumunu anlamak ve optimize etmek için AI API'si kullandım.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <div class="section">
+                <h2>İletişim</h2>
+                <p>Yayla Mah.Cengiz Topel<br>
+                Cad.Muradam Apt.No:61 D-11<br>
+                Tuzla İSTANBUL<br>
+                İstanbul<br><br>
+                Telefon: 05339282150<br>
+                <a href="mailto:tandogankaan5@gmail.com" class="email-link">tandogankaan5@gmail.com</a></p>
+            </div>
+
+            <div class="section">
+                <h2>Bağlantılar</h2>
+                <p><a href="https://github.com/CaptBarbarosa" class="email-link">Github</a></p>
+                <p><a href="https://www.linkedin.com/in/kaan-tando%C4%9Fan-2400601ab/" class="email-link">Linkedin</a></p>
+                <p><a href="https://tryhackme.com/r/p/AdmBarbarossa" class="email-link">TryHackMe</a></p>
+            </div>
+
+            <div class="section">
+                <h2>Yetenekler</h2>
+                <ul>
+                    <li>Algorithms</li>
+                    <li>C/C++ Programming</li>
+                    <li>Data Structures</li>
+                    <li>Database Design</li>
+                    <li>HTML/CSS</li>
+                    <li>JavaScript</li>
+                    <li>Java</li>
+                    <li>Logic Design</li>
+                    <li>Network Pentesting</li>
+                    <li>Operating Systems</li>
+                    <li>Python</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Diller</h2>
+                <div>
+                    Türkçe
+                    <div class="languages-bar">
+                        <div class="languages-fill" style="width: 100%"></div>
+                    </div>
+                </div>
+                <div>
+                    İngilizce
+                    <div class="languages-bar">
+                        <div class="languages-fill" style="width: 75%"></div>
+                    </div>
+                </div>
+                <div>
+                    Fransızca
+                    <div class="languages-bar">
+                        <div class="languages-fill" style="width: 25%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Hobiler</h2>
+                <ul>
+                    <li>Mitoloji</li>
+                    <li>Arkeoloji</li>
+                    <li>Cyber Security</li>
+                    <li>Kickbox</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sayfa 2 -->
+    <div class="page page-break">
+        <div class="content-column">
+            <div class="section">
+                <h2>Dersler</h2>
+                <ul>
+                    <li>C Programlama</li>
+                    <li>Veri Yapıları ve Algoritmalar</li>
+                    <li>Veritabanı Tasarımı</li>
+                    <li>Biçimsel Diller ve Soyut Makineler</li>
+                    <li>Mikroişlemciler ve Gömülü Sistemler Geliştirme</li>
+                    <li>İşletim Sistemleri</li>
+                    <li>Java ile Nesne Yönelimli Programlama Dili ve Sistemler</li>
+                    <li>Programlama Dili Kavramları</li>
+                    <li>Python ile Betik Dilleri Kullanarak Yazılım Geliştirme</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Ödüller</h2>
+                <ul>
+                    <li>2021-2022 Bahar Dönemi Onur Listesi</li>
+                    <li>12inci Cumhuriyet Satranç Turnuvası Minikler 1.si</li>
+                    <li>Küçük Ustalar Satranç Turnuvası Minikler Kategorisi 3.Sınıf Erkekler Dördüncüsü</li>
+                    <li>Eyüboğlu Eğitim Kurumları 13.cü Dostluk Satranç Turnuvası Küçükler Üçüncüsü (2008)</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Ders Dışı Aktiviteler</h2>
+                <ul>
+                    <li>Satranç</li>
+                    <li>Kickbox</li>
+                    <li>Teknofest Mechatrover<br>
+                    User Interface geliştirme ve algoritma implementasyonundan sorumluyum</li>
+                    <li>ODTÜ KKK IEEE RAS<br>
+                    IEEE'de öğrencilere robotik programlama eğitimi veriyorum.</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Referanslar</h2>
+                <p>Can Tarakcı - Secure Way<br>
+                can.tarakci@secureway.com.tr</p>
+                <p>Mesut Türk - IBTech<br>
+                mesut.turk@softtech.com.tr</p>
+                <p>Yeliz Yeşilada - ODTÜ<br>
+                yyesil@metu.edu.tr</p>
+                <p>Şükrü Eraslan - ODTÜ<br>
+                seraslan@metu.edu.tr</p>
+            </div>
+        </div>
+
+        <div class="sidebar" style="min-height: 100vh">
+            <!-- Empty sidebar to maintain layout -->
+        </div>
+    </div>
+</body>
+</html>
